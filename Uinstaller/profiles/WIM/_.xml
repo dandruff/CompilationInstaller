@@ -1,0 +1,7 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+  <Script file="WIM3_Alias.lua"/>
+  <Script file="WIM3_Cache.lua"/>
+  <Script file="WIM3_ChatFilters.lua"/>
+  <Script file="WIM3_Data.lua"/>
+  <Script file="WIM3_History.lua"/>
+</Ui>

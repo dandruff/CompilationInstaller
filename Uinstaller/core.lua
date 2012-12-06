@@ -15,10 +15,10 @@ function E:Install()
   local backups = {}
   for i, entry in pairs(self.Profiles) do
     -- Create a backup first
-    table.insert(backups, CreateProfileEntry(entry.Name, _[entry.Name]))
+    table.insert(backups, CreateProfileEntry(entry.Name, _G[entry.Name]))
     
     -- Load the new value
-    _[entry.Name] = entry.Profile
+    _G[entry.Name] = entry.Profile
   end
   
   -- Save the backups for later
@@ -32,7 +32,7 @@ end
 function E:Uninstall()
   for i, entry in pairs(C.Backups) do
     -- Load the new value
-    _[entry.Name] = entry.Profile
+    _G[entry.Name] = entry.Profile
   end
   
   C.installed = false
