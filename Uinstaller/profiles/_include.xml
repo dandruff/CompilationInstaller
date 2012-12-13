@@ -1,5 +1,6 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
   <!-- Folders (Multiple Profiles) -->
+  <Include file="DBM\_.xml"/>
   <Include file="ElvUI\_.xml"/>
   <Include file="Forte\_.xml"/>
   <Include file="MSBT\_.xml"/>
@@ -11,10 +12,12 @@
   <Script file="ACP_Data.lua"/>
   <Script file="ARKINVDB.lua"/>
   <Script file="AzCastBar_Profiles.lua"/>
+  <Script file="Comergy_Config.lua"/>
   <Script file="ElvUI_ChatTweaksDB.lua"/>
   <Script file="HermesDB2.lua"/>
   <Script file="JPackDB.lua"/>
   <Script file="kgPanelsDB.lua"/>
+  <Script file="MSBTProfiles_SavedVarsPerChar.lua"/>
   <Script file="OneRing_Config.lua"/>
   <Script file="RefluxDB.lua"/>
   <Script file="SkadaDB.lua"/>

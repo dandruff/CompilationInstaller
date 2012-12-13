@@ -1,0 +1,16 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+  <Script file="DBM_SavedOptions.lua"/>
+  <Script file="DBMHeartofFear_SavedStats.lua"/>
+  <Script file="DBMHeartofFear_SavedVars.lua"/>
+  <Script file="DBMMogushanVaults_SavedStats.lua"/>
+  <Script file="DBMMogushanVaults_SavedVars.lua"/>
+  <Script file="DBMPandaria_SavedStats.lua"/>
+  <Script file="DBMPandaria_SavedVars.lua"/>
+  <Script file="DBMPartyMoP_SavedStats.lua"/>
+  <Script file="DBMPartyMoP_SavedVars.lua"/>
+  <Script file="DBMScenarioMoP_SavedStats.lua"/>
+  <Script file="DBMScenarioMoP_SavedVars.lua"/>
+  <Script file="DBMWorldEvents_SavedStats.lua"/>
+  <Script file="DBMWorldEvents_SavedVars.lua"/>
+  <Script file="DBT_SavedOptions.lua"/>
+</Ui>
