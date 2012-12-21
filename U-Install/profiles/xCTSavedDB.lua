@@ -2,6 +2,9 @@ local E, L, C = unpack(select(2, ...))
 
 local name = "xCTSavedDB"
 local profile = {
+  ["profileKeys"] = {
+    [UnitName("player").." - "..GetRealmName()] = "Default",
+  },
 	["profiles"] = {
 		["Default"] = {
 			["megaDamage"] = {

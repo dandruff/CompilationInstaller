@@ -2,6 +2,9 @@ local E, L, C = unpack(select(2, ...))
 
 local name = "ElvDB"
 local profile = {
+  ["profileKeys"] = {
+    [UnitName("player").." - "..GetRealmName()] = "Default",
+  },
 	["namespaces"] = {
 		["LibDualSpec-1.0"] = {
 		},
