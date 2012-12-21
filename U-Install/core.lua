@@ -54,10 +54,10 @@ function E.Event_EnteringWorld(self)
   self:UnregisterEvent("PLAYER_ENTERING_WORLD")
   
   -- Make sure we have the config
-  if not UinstallerDB then UinstallerDB = { } end
+  if not UInstallDB then UInstallDB = { } end
 
   -- Load the config into 'C'
-  E:LoadConfig(UinstallerDB)
+  E:LoadConfig(UInstallDB)
   
   -- Check to see if we have to install
   if C.declined then

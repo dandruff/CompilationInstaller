@@ -1,4 +1,0 @@
-<Ui xmlns="http://www.blizzard.com/wow/ui/">
-  <Script file="MSBT_SavedMedia.lua"/>
-  <Script file="MSBTProfiles_SavedVars.lua"/>
-</Ui>

@@ -1,4 +1,0 @@
-<Ui xmlns="http://www.blizzard.com/wow/ui/">
-  <Script file="FC_Saved.lua"/>
-  <Script file="FX_Saved.lua"/>
-</Ui>

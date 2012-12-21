@@ -1,5 +1,0 @@
-<Ui xmlns="http://www.blizzard.com/wow/ui/">
-  <Script file="Overachiever_CharVars_Default.lua"/>
-  <Script file="Overachiever_Settings.lua"/>
-  <Script file="Overachiever_Tabs_Settings.lua"/>
-</Ui>
