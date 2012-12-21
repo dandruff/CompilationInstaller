@@ -1,14 +1,23 @@
 local E, L, C = unpack(select(2, ...))
 
--- Profile Database
+-- Profile and Addons Database
 E.Profiles = {}
+E.Addons = {}
 
 local function CreateProfileEntry(n, p)
   return {Name=n,Profile=p}
 end
 
+local function CreateAddonEntry(n, e)
+  return {Name=n,IsEnabled=e}
+end
+
 function E:RegisterProfile(Name, Profile)
   table.insert(E.Profiles, CreateProfileEntry(Name, Profile))
+end
+
+function E:RegisterAddon(AddonName, Enabled)
+  table.insert(E.Profiles, CreateProfileEntry(AddonName, Enabled))
 end
 
 function E:Install()
@@ -23,6 +32,15 @@ function E:Install()
   
   -- Save the backups for later
   C.Backups = backups
+  
+  -- Load the addons if we need to
+  for i, entry in pairs(self.Addons) do
+    if entry.IsEnabled then
+      EnableAddOn(entry.Name)
+    else
+      DisableAddOn(entry.Name)
+    end
+  end
   
   -- We are now installed, restarting UI
   C.installed = true
@@ -111,6 +129,7 @@ SlashCmdList["UINSTALL"] = function(input)
   if input == L.slash_uninstall_command then
     if C.installed then
       StaticPopup_Show("UINSTALLER_ASKTO_UNINSTALL")
+      return
     end
   end
   
@@ -121,4 +140,10 @@ SlashCmdList["UINSTALL"] = function(input)
     StaticPopup_Show("UINSTALLER_ASKTO_INSTALL")
     return
   end
+end
+
+-- Common Mispellings
+SLASH_UNINSTALL1 = L.error_slash
+SlashCmdList["UNINSTALL"] = function(input)
+  print(L.error_slash_message)
 end

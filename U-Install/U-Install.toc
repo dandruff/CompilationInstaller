@@ -9,4 +9,5 @@ init.lua
 load_locales.xml
 core.lua
 
+addons\_include.xml
 profiles\_include.xml
