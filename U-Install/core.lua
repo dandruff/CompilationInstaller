@@ -17,7 +17,7 @@ function E:RegisterProfile(Name, Profile)
 end
 
 function E:RegisterAddon(AddonName, Enabled)
-  table.insert(E.Profiles, CreateProfileEntry(AddonName, Enabled))
+  table.insert(E.Addons, CreateAddonEntry(AddonName, Enabled))
 end
 
 function E:Install()
@@ -34,11 +34,19 @@ function E:Install()
   C.Backups = backups
   
   -- Load the addons if we need to
-  for i, entry in pairs(self.Addons) do
-    if entry.IsEnabled then
-      EnableAddOn(entry.Name)
-    else
-      DisableAddOn(entry.Name)
+  for index = 1,GetNumAddOns() do
+    local name, title, notes, enabled, loadable, reason, security = GetAddOnInfo(index)
+    for i, entry in pairs(self.Addons) do
+      if entry.Name == name then
+        if not enabled then
+          if entry.IsEnabled then
+            print("EnableAddOn:", entry.Name)
+            EnableAddOn(entry.Name)
+          else
+            DisableAddOn(entry.Name)
+          end
+        end
+      end
     end
   end
   
