@@ -2,7 +2,7 @@ local E, L, C = unpack(select(2, ...))
 
 if E.Client == "enUS" or not L.Loaded then
 -- Edit lines below to the correct text
-  L.ui_name = "|cffC5B358Kkthnxbye|r|cff7282E0ElvUI|r"
+  L.ui_name = "|cffFFFF00myUICompilation|r" -- Yes, spaces are allowed :D
   
   -- Install Popup  
   L.install_desc = "Would you like to use |cffFFFF00U-Install|r to install " .. L.ui_name .. "?"
@@ -21,7 +21,7 @@ if E.Client == "enUS" or not L.Loaded then
   L.uninstall_decline = "Cancel"
   
   -- Startup Text
-  L.startup_declined = "|cffFFFF00U-Install|r wants to install this UI compilation. Type |cffFF0000/uinstall|r to install."
+  L.startup_declined = "|cffFFFF00U-Install|r wants to install " .. L.ui_name .. ". Type |cffFF0000/uinstall|r to install."
   
   -- Slash Commands
   L.slash_install = "/uinstall"

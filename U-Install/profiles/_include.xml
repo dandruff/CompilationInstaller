@@ -4,7 +4,5 @@
   
   <!-- Profiles -->
   <!-- <Script file="database_name.lua"/> -->
-  <Script file="ElvDB.lua"/>
-  <Script file="ElvPrivateDB.lua"/>
-  <Script file="xCTSavedDB.lua"/>
+  <Script file="TemplateDB.lua"/>
 </Ui>
