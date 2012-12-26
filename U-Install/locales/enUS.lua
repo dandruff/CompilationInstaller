@@ -21,7 +21,7 @@ if E.Client == "enUS" or not L.Loaded then
   L.uninstall_decline = "Cancel"
   
   -- Startup Text
-  L.startup_declined = "|cffFFFF00U-Install|r wants to install this UI compilation. Type |cffFF0000/uinstall|r to install."
+  L.startup_declined = "|cffFFFF00U-Install|r wants to install " .. L.ui_name .. ". Type |cffFF0000/uinstall|r to install."
   
   -- Slash Commands
   L.slash_install = "/uinstall"
