@@ -23,4 +23,3 @@ E:RegisterAddon("SkadaHealing", true)
 
 E:RegisterAddon("SquareMinimapButtons", true)
 E:RegisterAddon("stAddonManager", true)
-E:RegisterAddon("xCT+", true)
